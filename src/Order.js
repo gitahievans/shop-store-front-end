@@ -10,13 +10,13 @@ function Order({
   onDeleteOrder,
   orderId,
 }) {
-  const handleDelete = () => {
-    fetch(`https://localhost:9292/${orderId}`, {
+  function handleDelete() {
+    fetch(`http://localhost:9292/orders/${orderId}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
       .then(() => onDeleteOrder(order));
-  };
+  }
 
   return (
     <div className="order">
@@ -25,7 +25,7 @@ function Order({
       <h3>Description: {description}</h3>
       <h3>Date ordred: {ordered}</h3>
       <h3>Delivery date: {delivery}</h3>
-      <button onClick={onDeleteOrder}>Remove Order</button>
+      <button onClick={() => handleDelete()}>Remove Order</button>
     </div>
   );
 }

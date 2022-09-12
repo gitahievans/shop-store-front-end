@@ -38,7 +38,10 @@ function OrderList() {
       .then((newOrder) => console.log(newOrder));
   }
 
-  const handleDeleteOrder = (deletedOrder) => {};
+  const handleDeleteOrder = (deletedOrder) => {
+    const updatedList = orders.filter((order) => order.id !== deletedOrder.id);
+    setOrders(updatedList);
+  };
 
   return (
     <>
@@ -50,6 +53,7 @@ function OrderList() {
                 <Order
                   order={order}
                   key={order.id}
+                  orderId={order.id}
                   name={order.name}
                   price={order.price}
                   description={order.description}
