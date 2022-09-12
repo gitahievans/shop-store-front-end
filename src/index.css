@@ -70,6 +70,7 @@
     height: fit-content;
     margin-left: 50px;
     padding-left: 10px;
+    font-size: 13px;
 }
 
 .main-order-container {
@@ -80,7 +81,7 @@
 .order-poster {
     display: flex;
     width: 20%;
-    height: 250px;
+    height: fit-content;
     margin-left: 10px;
     border-radius: 8px;
     margin-top: 5px;
