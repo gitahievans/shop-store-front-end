@@ -111,7 +111,7 @@ function OrderList() {
             <input
               className="item-input"
               type="text"
-              placeholder="Enter item store_id"
+              placeholder="Enter date ordered"
               value={date_ordered}
               onChange={(e) => setDate_ordered(e.target.value)}
             />
@@ -119,7 +119,7 @@ function OrderList() {
             <input
               className="item-input"
               type="text"
-              placeholder="Enter item store_id"
+              placeholder="Enter delivery date"
               value={delivery_date}
               onChange={(e) => setDelivery_date(e.target.value)}
             />
