@@ -2,7 +2,7 @@ import React from "react";
 
 function Buyer({ name, location, phone, email }) {
   return (
-    <div>
+    <div className="buyer">
       <h4>Name: {name}</h4>
       <h4>Location: {location}</h4>
       <h4>

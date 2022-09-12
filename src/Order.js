@@ -2,7 +2,7 @@ import React from "react";
 
 function Order({ name, price, description, ordered, delivery }) {
   return (
-    <div>
+    <div className="order">
       <h3>Name: {name}</h3>
       <h3>Price: {price}</h3>
       <h3>Description: {description}</h3>

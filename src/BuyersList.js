@@ -11,7 +11,7 @@ function BuyersList() {
   }, []);
 
   return (
-    <div>
+    <div className="buyers-container">
       {buyers.map((buyer) => {
         return (
           <Buyer

@@ -1,0 +1,96 @@
+.navbar-outer {
+    background-color: cadetblue;
+    border-radius: 7px;
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-around;
+    height: 55px;
+}
+
+/* ======================== */
+.stores-container {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: cadetblue;
+}
+
+.store-name-tag {
+    color: rgb(3, 69, 31);
+    font-size: 20px;
+}
+
+.store-name {
+    color: rgb(0, 86, 110);
+    font-size: 16px;
+}
+
+.store-location-tag {
+    color: rgb(3, 69, 31);
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.store-location {
+    color: rgb(0, 86, 110);
+    font-size: 16px;
+}
+
+/* buyer======================== */
+.buyers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    grid-gap: 10px;
+    border-radius: 10px;
+    background-color: cadetblue;
+}
+
+.buyer {
+    background-color: darkcyan;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.orders-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    grid-gap: 10px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    flex: 1;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    background-color: darkcyan;
+    border-radius: 10px;
+    height: fit-content;
+    margin-left: 50px;
+    padding-left: 10px;
+}
+
+.main-order-container {
+    display: flex;
+    margin-top: 5px;
+}
+
+.order-poster {
+    display: flex;
+    width: 20%;
+    height: 250px;
+    margin-left: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+    background-color: cadetblue;
+}
+
+.item-input {
+    margin: 10px;
+}
+
+.post-button {
+    margin-left: 35%;
+}
