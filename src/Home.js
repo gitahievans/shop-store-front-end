@@ -1,6 +1,12 @@
-import React from 'react';
+import React from "react";
 
-function Home(){
-    return <div>Welcome</div>;
+function Home() {
+  return (
+    <div className="home">
+      <div className="welcome-message">
+        <h1 className="message">Welcome to FerryMe Logistics</h1>
+      </div>
+    </div>
+  );
 }
 export default Home;

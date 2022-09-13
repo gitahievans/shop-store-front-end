@@ -45,13 +45,26 @@
     grid-gap: 10px;
     border-radius: 10px;
     background-color: cadetblue;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("/home/gitahievans/Development/Code/phase3/phase-3-Final-project/my-app-frontend/pictures/buyers.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 5px;
 }
 
 .buyer {
     background-color: darkcyan;
     border-radius: 10px;
     padding-left: 10px;
+    /* background-color: transparent; */
+    background-color: rgba(0, 0, 0, 0.6);
 }
+
+.buyer-details {
+    color: cornsilk;
+}
+
+/* ============================================================================= */
 
 .orders-container {
     display: grid;
@@ -60,6 +73,10 @@
     border-radius: 10px;
     background-color: cadetblue;
     flex: 1;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("/home/gitahievans/Development/Code/phase3/phase-3-Final-project/my-app-frontend/pictures/orders.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
 }
 
 .order {
@@ -71,6 +88,7 @@
     margin-left: 50px;
     padding-left: 10px;
     font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .main-order-container {
@@ -94,4 +112,24 @@
 
 .post-button {
     margin-left: 35%;
+}
+
+.order-details {
+    color: cornsilk;
+}
+
+/* =============================================== */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(117, 19, 93, 0.73)), url("/home/gitahievans/Development/Code/phase3/phase-3-Final-project/my-app-frontend/pictures/home.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.message {
+    color: cornsilk;
+    background-color: transparent;
 }
