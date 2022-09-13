@@ -12,14 +12,14 @@ function OrderList() {
   const [delivery_date, setDelivery_date] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:9292/orders")
+    fetch("https://store-track-app.herokuapp.com/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:9292/orders", {
+    fetch("https://store-track-app.herokuapp.com/orders", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

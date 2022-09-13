@@ -5,7 +5,7 @@ function BuyersList() {
   const [buyers, setBuyers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:9292/buyers")
+    fetch("https://store-track-app.herokuapp.com/buyers")
       .then((res) => res.json())
       .then((data) => setBuyers(data));
   }, []);

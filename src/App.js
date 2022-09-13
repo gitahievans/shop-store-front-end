@@ -11,7 +11,7 @@ function App() {
   const [storeItems, setStoreItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:9292/store_track")
+    fetch("https://store-track-app.herokuapp.com/store_track")
       .then((res) => res.json())
       .then((appData) => setAllItems(appData));
   }, []);

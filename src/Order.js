@@ -11,7 +11,7 @@ function Order({
   orderId,
 }) {
   function handleDelete() {
-    fetch(`http://localhost:9292/orders/${orderId}`, {
+    fetch(`https://store-track-app.herokuapp.com/orders/${orderId}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
